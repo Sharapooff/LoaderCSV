@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Производственная практика</h1>
+    <p>Создание Web приложения с использованием технологии ASP.NET Core и EF</a>.</p>
+</div>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+@* подключаем свой скрипт *@
+@*@Scripts.Render("~/bundles/Oscilograf/js")*@
+
+<figure class="highcharts-figure">
+  <div id="container"></div>
+  <p class="highcharts-description">
+   Базовая линейная диаграмма, показывающая тенденции в наборе данных. Этот график включает в себя
+     модуль <code>series-label</code>, который добавляет метку к каждой строке для
+     улучшенная читаемости.
+  </p>
+</figure>
